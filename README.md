@@ -2,6 +2,7 @@
 
 Este repositorio contiene el examen parcial de Ingenieria de Software I, incluyendo el examen escaneado, los diagramas solicitados en PlantUML, y la actividad post-parcial con mejoras.
 
+
 ---
 
 ## Examen Escaneado
