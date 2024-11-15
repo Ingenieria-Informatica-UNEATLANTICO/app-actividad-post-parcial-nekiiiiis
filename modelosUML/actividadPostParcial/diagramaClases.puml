@@ -1,0 +1,44 @@
+@startuml
+
+class Vehiculo {
+    +estado: String
+    +iniciarRuta()
+    +pausar()
+    +reanudar()
+    +llegarDestino()
+}
+
+class Conductor {
+    +nombre: String
+    +iniciarConduccion()
+    +parar()
+    +registrarIncidente()
+}
+
+class Pasajero {
+    +nombre: String
+    +tipoAbono: String
+    +esperar()
+    +realizarPago()
+    +subirAlTransporte()
+}
+
+class Ruta {
+    +nombre: String
+    +horario: String
+    +parada: String
+}
+
+class Tarifa {
+    +monto: Float
+    +calcular()
+}
+
+Vehiculo "1" --> "1" Conductor : conduce
+Vehiculo "1" --> "*" Pasajero : transporta
+Conductor "1" --> "1" Ruta : sigue
+Conductor "1" --> "1" Tarifa : cobra
+Pasajero --> Tarifa : paga
+Ruta --> Tarifa : define
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml "Vehículo"
+[*] --> Fuera_de_servicio : inicia
+Fuera_de_servicio --> En_ruta : inicia ruta
+En_ruta --> En_parada : pausa
+En_parada --> En_ruta : reanuda
+En_ruta --> En_destino : llega destino
+En_destino --> Fuera_de_servicio : incidente
+En_parada --> Fuera_de_servicio : incidente
+En_destino --> [*] : fin
+@enduml

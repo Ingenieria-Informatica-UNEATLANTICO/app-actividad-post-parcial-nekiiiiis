@@ -1,0 +1,7 @@
+@startuml "Conductor"
+[*] --> Parado : inicia
+Parado --> Conduciendo : en conducción
+Conduciendo --> En_destino : llega destino
+Conduciendo --> Parado : incidente
+En_destino --> [*] : fin
+@enduml
