@@ -1,0 +1,8 @@
+@startuml "Pasajero"
+[*] --> En_espera : inicia
+En_espera --> Pagando : llega el bus
+Pagando --> En_espera : error en el pago
+Pagando --> En_transporte : pago realizado
+En_transporte --> En_destino : llega destino
+En_destino --> [*] : fin
+@enduml

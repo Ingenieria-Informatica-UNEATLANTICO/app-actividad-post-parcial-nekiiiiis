@@ -1,53 +1,70 @@
-# Repo plantilla para exámenes [PRG*x*|EDA*x*|IDSW*x*]@gII.uneatlantico
+# Examen Parcial - Ingenieria de Software I
 
-*Este documento es una guía para la realización y entrega de las evaluaciones en las asignaturas PRGx, EDAx e IDSWx del Grado en Ingeniería Informática. Detalla la estructura del repositorio de entrega, los artefactos requeridos y los criterios de evaluación.*
+Este repositorio contiene el examen parcial de Ingenieria de Software I, incluyendo el examen escaneado, los diagramas solicitados en PlantUML, y la actividad post-parcial con mejoras.
 
-## Enunciado del examen
 
-En el repo de la asignatura, carpeta `/evaluaciones`, apartado del examen correspondiente.
+---
 
-### Retos
+## Examen Escaneado
 
-Indicados dentro del enunciado del examen.
+A continuación, puedes ver el examen escaneado en formato PDF:
 
-## Entrega del examen
+- [Examen Parcial Escaneado](./documents/parcial.pdf)
 
-En el repositorio destinado para tal fin en el examen.
+---
 
-### Artefactos
+## Diagramas en PlantUML
 
-A continuación una lista de artefactos que habitualmente constituyen la entrega de un examen:
+### Diagrama de Clases
 
-||||
-|-|-|-|
-|1|Archivo **README.md**|**Este archivo**, sobreescrito con su presentación de la propuesta de solución al examen.|
-|2|Código fuente|Proyecto ordenado dentro de la carpeta `/src`.|
-|3|Diagramas UML|Archivos fuente en la carpeta `/modelosUML`.|
-| ||Diagramas exportados en formato .svg en la carpeta `/images`. |
-|4|Imágenes|Si considera necesario incluir imágenes además de los diagramas, deben alojarse en la carpeta `/images` y estar referenciadas en el documento de entrega.|
-| ||Para diagramas use el formato .svg y para imágenes comunes, el formato .png.|
-|5|Documentación adicional|En la carpeta `/documents`.|
+- [Archivo PlantUML](./modelosUML/examenParcial/diagramaClases.puml)
+- ![Diagrama de Clases](./images/clasesEx.svg)
 
-### Qué se debe entregar
+### Diagrama de Objetos
 
-- Los artefactos a entregar se indican en el examen de modo específico. Se especificará cuales son obligatorios.
-- Usted tiene la libertad de decidir si incluir o no los elementos que no sean explícitamente requeridos en el enunciado del examen. Su inclusión es facultativa y debe basarse en su criterio sobre la relevancia o aporte que estos elementos puedan tener para el trabajo presentado.
-- Todos los artefactos han de quedar adecuadamente relacionados desde el artefacto 1.
+- [Archivo PlantUML](./modelosUML/examenParcial/diagramaObjetos.puml)
+- ![Diagrama de Objetos](./images/objetos.svg)
 
-## Se valorará
+---
 
-- Proceso de creación.
-- Exactitud en la solución.
-- Adecuado reparto de responsabilidades.
-- Código limpio.
-- Claridad del código.
-- Gestión de estados.
-- Y, por supuesto, el uso de los temas vistos en clase.
+### Diagrama de Estados - Vehículo
 
-### Se propone/sugiere
+- [Archivo PlantUML](./modelosUML/examenParcial/diagramaEstadosVehiculo.puml)
+- ![Diagrama de Estados - Vehículo](./images/vehiculo.svg)
 
-|||
-|-|-|
-|Planificación| Planifique su enfoque utilizando diagramas, esquemas, estados y/o pseudocódigo. Lo puede aportar en su repo, como diagrama o como imagen (foto), en la carpeta adecuada y enlazado desde el README.md|
-|Documentación|En dicho README.md puede explicar cómo cada parte contribuye a la solución general. Y como hemos debatido ampliamente, evite los comentarios a su código: ¡que el código se autoexplique!.|
-|Delegación de responsabilidades|Dedíquele un momento a reflexionar sobre cómo reparte las responsabilidades entre los diferentes artefactos y cómo esto afecta la claridad y eficiencia de su solución.|
+### Diagrama de Estados - Conductor
+
+- [Archivo PlantUML](./modelosUML/examenParcial/diagramaEstadosConductor.puml)
+- ![Diagrama de Estados - Conductor](./images/conductor.svg)
+
+### Diagrama de Estados - Pasajero
+
+- [Archivo PlantUML](./modelosUML/examenParcial/diagramaEstadosPasajero.puml)
+- ![Diagrama de Estados - Pasajero](./images/pasajero.svg)
+
+---
+
+## Actividad Post-Parcial - Mejoras
+
+Como parte de la actividad post-parcial, se realizaron mejoras en el modelado de los diagramas de clases y de objetos, basándose en los diagramas de estados creados para el examen. Además, se ha creado un diagrama de estados global que integra las interacciones de todos los actores. A continuación, se muestran las mejoras en los diagramas:
+
+### Diagrama de Clases Mejorado
+
+- [Archivo PlantUML](./modelosUML/actividadPostParcial/diagramaClases.puml)
+- ![Diagrama de Clases Mejorado](./images/clasespost.svg)
+
+### Diagrama de Objetos Mejorado
+
+- [Archivo PlantUML](./modelosUML/actividadPostParcial/diagramaObjetos.puml)
+- ![Diagrama de Objetos Mejorado](./images/objetosPost.svg)
+
+### Diagrama de Estados Global
+
+Este diagrama de estados global muestra la interacción y flujo general entre el **Vehículo**, **Conductor**, y **Pasajero** en el sistema.
+
+- [Archivo PlantUML](./modelosUML/actividadPostParcial/diagramaEstados.puml)
+- ![Diagrama de Estados Global](./images/estadosPost.svg)
+
+---
+
+Este repositorio organiza la información de manera estructurada, facilitando la revisión de los diagramas y las mejoras implementadas en la actividad post-parcial.

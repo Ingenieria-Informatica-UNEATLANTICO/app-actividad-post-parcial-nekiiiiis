@@ -1,0 +1,47 @@
+@startuml
+
+object "Juan:Conductor" as conductor {
+    nombre = "Juan"
+}
+
+object "Santander-Somo:Ruta" as ruta {
+    nombre = "Santander-Somo"
+    horario = "11am-12am"
+    parada = "Aeropuerto"
+}
+
+object "Autobus:Vehiculo" as vehiculo {
+    estado = "En_ruta"
+}
+
+object "Jose:Pasajero" as pasajero1 {
+    nombre = "Jose"
+    tipoAbono = "Familia Numerosa"
+}
+
+object "Julián:Pasajero" as pasajero2 {
+    nombre = "Julián"
+    tipoAbono = "Efectivo"
+}
+
+object "Jorge:Pasajero" as pasajero3 {
+    nombre = "Jorge"
+    tipoAbono = "Jubilado"
+}
+
+object "2,5€:Tarifa" as tarifa {
+    monto = 2.5
+}
+
+vehiculo --> pasajero1 : transporta
+vehiculo --> pasajero2 : transporta
+vehiculo --> pasajero3 : transporta
+conductor --> ruta : sigue
+conductor --> tarifa : cobra
+conductor --> vehiculo : conduce
+pasajero1 --> tarifa : paga
+pasajero2 --> tarifa : paga
+pasajero3 --> tarifa : paga
+ruta --> tarifa : define
+
+@enduml

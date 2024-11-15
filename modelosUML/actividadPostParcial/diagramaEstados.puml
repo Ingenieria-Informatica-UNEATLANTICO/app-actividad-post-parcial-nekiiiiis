@@ -1,0 +1,32 @@
+@startuml
+frame Vehiculo {
+    [*] --> En_ruta : inicia
+    Fuera_de_servicio --> En_ruta : inicia ruta
+    En_ruta --> En_parada : pausa
+    En_parada --> En_ruta : reanuda
+    En_ruta --> En_destino : llega destino
+    En_destino --> Fuera_de_servicio : incidente
+    En_parada --> Fuera_de_servicio : incidente
+    En_destino --> [*] : fin
+}
+
+frame Conductor {
+    [*] --> Parado : inicia
+    Parado --> Conduciendo : en_conduccion
+    Conduciendo --> En_destino : llega_destino
+    Conduciendo --> Parado : incidente
+    En_destino --> [*] : fin
+}
+
+frame Pasajero {
+    [*] --> En_espera : inicia
+    En_espera --> Pagando : llega_el_bus
+    Pagando --> En_espera : error_en_el_pago
+    Pagando --> En_transporte : pago_realizado
+    En_transporte --> En_destino : llega_destino
+    En_destino --> [*] : fin
+}
+
+
+
+@enduml
