@@ -1,4 +1,4 @@
-# Examen Parcial - Programación de Sistemas
+# Examen Parcial - Ingenieria de Software I
 
 Este repositorio contiene el examen parcial de Ingenieria de Software I, incluyendo el examen escaneado, los diagramas solicitados en PlantUML, y la actividad post-parcial con mejoras.
 
